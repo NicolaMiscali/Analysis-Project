@@ -1,10 +1,10 @@
-# 🚕 NYC Yellow Taxi Trip Duration — End-to-End ML Project
+#  NYC Yellow Taxi Trip Duration — End-to-End ML Project
 
 A complete data science project built on the [NYC TLC Yellow Taxi Trip Records](https://www.kaggle.com/competitions/nyc-taxi-trip-duration) dataset from Kaggle. The goal is to **predict taxi trip duration** in New York City using regression models, combined with thorough data exploration and a PostgreSQL-backed pipeline.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 nyc-taxi/
 ├── db_config.ipynb      # Database setup, ETL pipeline, data cleaning
@@ -15,7 +15,7 @@ nyc-taxi/
 
 ---
 
-## 📦 Dataset
+##  Dataset
 
 | Property | Value |
 |---|---|
@@ -29,7 +29,7 @@ nyc-taxi/
 
 ---
 
-## 🗄️ Phase 1 — Database Setup & ETL (`db_config.ipynb`)
+##  Phase 1 — Database Setup & ETL (`db_config.ipynb`)
 
 ### Database
 - Loaded raw CSV into **PostgreSQL** (`taxi_nyc_db`) via **SQLAlchemy** + `psycopg2`
@@ -110,7 +110,7 @@ df_clean = df[
 
 ---
 
-## 🤖 Phase 3 — Machine Learning (`taxi_ml.ipynb`)
+##  Phase 3 — Machine Learning (`taxi_ml.ipynb`)
 
 ### Setup
 - **300,000 rows** sampled for iteration speed (`random_state=42`)
@@ -151,7 +151,7 @@ features = [
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -166,7 +166,7 @@ features = [
 
 ---
 
-## ⚙️ Setup
+##  Setup
 ```bash
 pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2-binary lightgbm scikit-learn jupyter
 ```
